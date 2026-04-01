@@ -10,38 +10,22 @@
     <!-- 封面页面 -->
     <div id="cover" class="page">
         <div class="cover-content">
-            <img id="coverImage" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20app%20cover%20with%20modern%20design%20colorful%20abstract%20background&image_size=portrait_16_9" alt="封面图片">
-            <h1>点击进入小程序</h1>
-            <div class="customize-btn" onclick="customizeCover()">自定义封面</div>
-            <div class="customize-btn" onclick="window.location.href='https://guo271828-spec.github.io/happyfoolishman/'">访问示例小程序</div>
+            <img id="coverImage" src="https://guo271828-spec.github.io/happyfoolishman/receipt.jpg" alt="收款截图">
             <input type="file" id="coverFile" accept="image/*" style="display: none;">
         </div>
     </div>
 
     <!-- 第一个内部页面 -->
-    <div id="page1" class="page hidden">
+    <div id="page1" class="page hidden" onclick="goToPage2()">
         <div class="page-content">
-            <div class="header">
-                <button onclick="goBack()">返回</button>
-                <h2>页面一</h2>
-            </div>
-            <img id="page1Image" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=first%20page%20interface%20with%20clean%20design%20and%20blue%20background&image_size=portrait_16_9" alt="页面一图片">
-            <button class="next-btn" onclick="goToPage2()">进入页面二</button>
-            <div class="customize-btn" onclick="customizePage1()">自定义图片</div>
-            <input type="file" id="page1File" accept="image/*" style="display: none;">
+            <img id="page1Image" src="" alt="页面一图片" style="cursor: pointer;">
         </div>
     </div>
 
     <!-- 第二个内部页面 -->
-    <div id="page2" class="page hidden">
+    <div id="page2" class="page hidden" onclick="goBack()">
         <div class="page-content">
-            <div class="header">
-                <button onclick="goBack()">返回</button>
-                <h2>页面二</h2>
-            </div>
-            <img id="page2Image" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=second%20page%20interface%20with%20modern%20design%20and%20green%20background&image_size=portrait_16_9" alt="页面二图片">
-            <div class="customize-btn" onclick="customizePage2()">自定义图片</div>
-            <input type="file" id="page2File" accept="image/*" style="display: none;">
+            <img id="page2Image" src="" alt="页面二图片" style="cursor: pointer;">
         </div>
     </div>
 
