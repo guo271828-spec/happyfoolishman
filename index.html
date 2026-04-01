@@ -10,22 +10,41 @@
     <!-- 封面页面 -->
     <div id="cover" class="page">
         <div class="cover-content">
-            <img id="coverImage" src="6e8726426d4dd3907c1f503edee1e9a5.jpg" alt="收款截图">
-            <input type="file" id="coverFile" accept="image/*" style="display: none;">
+            <div class="receipt-container">
+                <div class="receipt-header">
+                    <div class="checkmark">✓</div>
+                </div>
+                <div class="receipt-body">
+                    <h2>你已收款</h2>
+                    <div class="amount">¥ 10000.00</div>
+                    <div class="divider"></div>
+                    <div class="info-row">
+                        <span>转账时间</span>
+                        <span id="transferTime"></span>
+                    </div>
+                    <div class="info-row">
+                        <span>收款时间</span>
+                        <span id="receiveTime"></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- 第一个内部页面 -->
     <div id="page1" class="page hidden" onclick="goToPage2()">
-        <div class="page-content">
-            <img id="page1Image" src="" alt="页面一图片" style="cursor: pointer;">
+        <div class="page-content warning-page">
+            <div class="warning-text">愚人节快乐，谨防诈骗</div>
+            <div class="image-container">
+                <img id="page1Image" src="xixixi.jpg" alt="汐汐汐图片" style="cursor: pointer;">
+            </div>
         </div>
     </div>
 
     <!-- 第二个内部页面 -->
     <div id="page2" class="page hidden" onclick="goBack()">
         <div class="page-content">
-            <img id="page2Image" src="" alt="页面二图片" style="cursor: pointer;">
+            <img id="page2Image" src="shengrikuaile.jpg" alt="生日快乐图片" style="cursor: pointer;">
         </div>
     </div>
 
